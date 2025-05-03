@@ -1,5 +1,9 @@
+import Grid from "@/components/Grid";
+import Hero from "@/components/Hero";
+
 export default function Home() {
-  return (
-   <div>Home</div>
-  );
+  return <main>
+    <Hero />
+    <Grid />
+  </main>;
 }

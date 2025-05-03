@@ -33,7 +33,7 @@ export default function RootLayout({ children }) {
         <Header />
 
         {/* Main - Content Wrapper*/}
-        <main>{children}</main>
+        {children}
 
         {/* Footer */}
         <Footer />
