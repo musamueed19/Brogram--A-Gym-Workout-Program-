@@ -1,20 +1,11 @@
-import { Geist, Geist_Mono } from "next/font/google";
-
 // layout styles in the layout.css
 import "./layout.css";
 
 // design styles in the fanta.css
 import "./fanta.css";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata = {
   title: "Brogram - Workout Plan",
@@ -36,7 +27,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`antialiased`}
       >
         {/* Header */}
         <Header />
